@@ -1,0 +1,25 @@
+pipeline { 
+
+    agent any 
+
+  
+
+    stages { 
+
+        stage('Hello') { 
+
+            steps { 
+
+                echo 'Hello World' 
+
+               git branch: 'main', credentialsId: '1afc8f63-792c-445e-adf9-7e1941fc1159', url: 'https://github.com/pabloco11/primer_repositorio.git'
+
+             
+
+            } 
+
+        } 
+
+    } 
+
+} 
